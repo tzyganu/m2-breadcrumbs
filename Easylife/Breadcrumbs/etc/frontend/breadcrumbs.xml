@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+* Easylife_Breadcrumbs extension
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the MIT License
+* that is bundled with this package in the file LICENSE_EASYLIFE_BREADCRUMBS.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/mit-license.php
+*
+* @category       Easylife
+* @package        Easylife_Breadcrumbs
+* @copyright      Copyright (c) 2014
+* @license        http://opensource.org/licenses/mit-license.php MIT License
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="breadcrumbs_file.xsd">
+    <page id="customer_account_login" group="customer">
+        <label>Customer Login</label>
+        <methods>
+            <method name="_addLogin" sort="10" />
+        </methods>
+    </page>
+    <page id="customer_account_forgotpassword" group="customer">
+        <label>Forgot Your Password?</label>
+        <methods>
+            <method name="_addLogin" sort="10" />
+            <method name="_addForgotPassword" sort="20" />
+        </methods>
+    </page>
+    <page id="customer_account_index" group="customer">
+        <label>My Dashboard</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+        </methods>
+    </page>
+    <page id="customer_account_create" group="customer">
+        <label>Create New Customer Account</label>
+        <methods>
+            <method name="_addLogin" sort="10" />
+            <method name="_addRegister" sort="20" />
+        </methods>
+    </page>
+    <page id="customer_account_edit" group="customer">
+        <label>Edit Account Information</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addEditAccount" sort="20" />
+        </methods>
+    </page>
+    <page id="customer_address_index" group="customer">
+        <label>Address Book</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addAddressBook" sort="20" />
+        </methods>
+    </page>
+    <page id="customer_address_form" group="customer">
+        <label>Add New Address</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addAddressBook" sort="20" />
+            <method name="_addAddress" sort="30" />
+        </methods>
+    </page>
+    <page id="downloadable_customer_products" group="customer">
+        <label>My Downloadable Products</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addDownloadable" sort="20" />
+        </methods>
+    </page>
+    <page id="sales_recurringPayment_index" group="recurringPayment">
+        <label>Recurring Payments</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addRecurring" sort="20" />
+        </methods>
+    </page>
+    <page id="sales_recurringPayment_view" group="recurringPayment">
+        <label>Recurring Payment View</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addRecurring" sort="20" />
+            <method name="_addRecurringItem" sort="30" />
+        </methods>
+    </page>
+    <page id="sales_recurringPayment_orders" group="recurringPayment">
+        <label>Recurring Payments Orders</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addRecurring" sort="20" />
+            <method name="_addRecurringItem" sort="30" />
+            <method name="_addRecurringOrders" sort="40" />
+        </methods>
+    </page>
+    <page id="sales_recurringPayment_updatePayment" group="recurringPayment">
+        <label>Recurring Payments Update Payment</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addRecurring" sort="20" />
+            <method name="_addRecurringItem" sort="30" />
+            <method name="_addRecurringUpdatePayment" sort="40" />
+        </methods>
+    </page>
+    <page id="sales_recurringPayment_updateState" group="recurringPayment">
+        <label>Recurring Payments Update State</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addRecurring" sort="20" />
+            <method name="_addRecurringItem" sort="30" />
+            <method name="_addRecurringUpdateState" sort="40" />
+        </methods>
+    </page>
+    <page id="newsletter_manage_index" group="customer">
+        <label>Newsletter Subscription</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addNewsletter" sort="20" />
+        </methods>
+    </page>
+    <page id="paypal_billing_agreement_index" group="billingAgreement">
+        <label>Billing Agreements</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addBillingAgreements" sort="20" />
+        </methods>
+    </page>
+    <page id="paypal_billing_agreement_view" group="billingAgreement">
+        <label>Billing Agreements Details</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addBillingAgreements" sort="20" />
+            <method name="_addBillingAgreement" sort="30" />
+        </methods>
+    </page>
+    <page id="review_customer_index" group="customer">
+        <label>My Product Reviews</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addReviews" sort="20" />
+        </methods>
+    </page>
+    <page id="review_customer_view" group="customer">
+        <label>Review Details</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addReviews" sort="20" />
+            <method name="_addReview" sort="30" />
+        </methods>
+    </page>
+    <page id="wishlist_index_index" group="customer">
+        <label>Wish List</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addWishList" sort="20" />
+        </methods>
+    </page>
+    <page id="sales_order_history" group="sales">
+        <label>My Orders</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addOrders" sort="20" />
+        </methods>
+    </page>
+    <page id="sales_order_view" group="sales">
+        <label>Order</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addOrders" sort="20" />
+            <method name="_addOrder" sort="30" />
+        </methods>
+    </page>
+    <page id="sales_order_invoice" group="sales">
+        <label>Invoices</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addOrders" sort="20" />
+            <method name="_addOrderInvoice" sort="30" />
+            <method name="_addInvoice" sort="40" />
+        </methods>
+    </page>
+    <page id="sales_order_creditmemo" group="sales">
+        <label>Refunds</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addOrders" sort="20" />
+            <method name="_addOrderCreditMemo" sort="30" />
+            <method name="_addCreditMemo" sort="40" />
+        </methods>
+    </page>
+    <page id="sales_order_shipment" group="sales">
+        <label>Shipments</label>
+        <methods>
+            <method name="_addDashboard" sort="10" />
+            <method name="_addOrders" sort="20" />
+            <method name="_addOrderShipment" sort="30" />
+            <method name="_addShipment" sort="40" />
+        </methods>
+    </page>
+    <page id="catalogsearch_term_popular" group="misc">
+        <label>Popular Search Terms</label>
+        <methods>
+            <method name="_addSearchTerms" sort="10" />
+        </methods>
+    </page>
+    <page id="contact_index_index" group="misc">
+        <label>Contact Us</label>
+        <methods>
+            <method name="_addContact" sort="10" />
+        </methods>
+    </page>
+    <page id="checkout_cart_index" group="checkout">
+        <label>Shopping Cart</label>
+        <methods>
+            <method name="_addCart" sort="10" />
+        </methods>
+    </page>
+    <page id="sendfriend_product_send" group="misc">
+        <label>Email to a Friend</label>
+        <methods>
+            <method name="_addProductSend" sort="10" />
+            <method name="_addSendFriend" sort="20" />
+        </methods>
+    </page>
+    <page id="checkout_onepage_index" group="checkout">
+        <label>Checkout</label>
+        <methods>
+            <method name="_addCart" sort="10" />
+            <method name="_addCheckout" sort="20" />
+        </methods>
+    </page>
+    <page id="multishipping_checkout_addresses" group="multishipping">
+        <label>Ship to Multiple Addresses</label>
+        <methods>
+            <method name="_addCart" sort="10" />
+            <method name="_addMultiCheckoutAddresses" sort="20" />
+        </methods>
+    </page>
+    <page id="multishipping_checkout_address_newShipping" group="multishipping">
+        <label>Create Shipping Address</label>
+        <methods>
+            <method name="_addCart" sort="10" />
+            <method name="_addMultiCheckoutAddresses" sort="20" />
+            <method name="_addMultiCheckoutAddress" sort="30" />
+        </methods>
+    </page>
+    <page id="multishipping_checkout_shipping" group="multishipping">
+        <label>Shipping Information</label>
+        <methods>
+            <method name="_addCart" sort="10" />
+            <method name="_addMultiCheckoutAddresses" sort="20" />
+            <method name="_addMultiCheckoutShipping" sort="30" />
+        </methods>
+    </page>
+    <page id="multishipping_checkout_address_editShipping" group="multishipping">
+        <label>Edit Shipping Address</label>
+        <methods>
+            <method name="_addCart" sort="10" />
+            <method name="_addMultiCheckoutAddresses" sort="20" />
+            <method name="_addMultiCheckoutShipping" sort="30" />
+            <method name="_addMultiEditShipping" sort="40" />
+        </methods>
+    </page>
+    <page id="multishipping_checkout_billing" group="multishipping">
+        <label>Billing Information</label>
+        <methods>
+            <method name="_addCart" sort="10" />
+            <method name="_addMultiCheckoutAddresses" sort="20" />
+            <method name="_addMultiCheckoutShipping" sort="30" />
+            <method name="_addMultiBilling" sort="40" />
+        </methods>
+    </page>
+    <page id="multishipping_checkout_address_selectBilling" group="multishipping">
+        <label>Change Billing Address</label>
+        <methods>
+            <method name="_addCart" sort="10" />
+            <method name="_addMultiCheckoutAddresses" sort="20" />
+            <method name="_addMultiCheckoutShipping" sort="30" />
+            <method name="_addMultiBilling" sort="40" />
+            <method name="_addMultiChangeBilling" sort="50" />
+        </methods>
+    </page>
+    <page id="multishipping_checkout_overview" group="multishipping">
+        <label>Review Order</label>
+        <methods>
+            <method name="_addCart" sort="10" />
+            <method name="_addMultiCheckoutAddresses" sort="20" />
+            <method name="_addMultiCheckoutShipping" sort="30" />
+            <method name="_addMultiBilling" sort="40" />
+            <method name="_addMultiReview" sort="50" />
+        </methods>
+    </page>
+    <page id="rss_index_index" group="misc">
+        <label>Rss</label>
+        <methods>
+            <method name="_addRss" sort="10" />
+        </methods>
+    </page>
+    <group id="customer" label="Customer account" sort="10" />
+    <group id="sales" label="Sales" sort="20" />
+    <group id="recurringPayment" label="Recurring Payments" sort="30" />
+    <group id="billingAgreement" label="Billing Agreements" sort="40" />
+    <group id="checkout" label="Checkout" sort="50" />
+    <group id="multishipping" label="Multi Shipping" sort="60" />
+    <group id="misc" label="Miscellaneous" sort="70" />
+</config>
