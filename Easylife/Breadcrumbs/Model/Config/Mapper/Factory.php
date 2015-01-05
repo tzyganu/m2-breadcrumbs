@@ -16,8 +16,9 @@
  */
 namespace Easylife\Breadcrumbs\Model\Config\Mapper;
 
-use \Magento\Framework\ObjectManager;
 use \Magento\Backend\Model\Config\Structure\MapperInterface;
+use Magento\Framework\ObjectManagerInterface;
+
 class Factory {
     /**
      * sorting mapper key
@@ -43,9 +44,9 @@ class Factory {
 
     /**
      * constructor
-     * @param ObjectManager $objectManager
+     * @param ObjectManagerInterface $objectManager
      */
-    public function __construct(ObjectManager $objectManager) {
+    public function __construct(ObjectManagerInterface $objectManager) {
         $this->_objectManager = $objectManager;
     }
 

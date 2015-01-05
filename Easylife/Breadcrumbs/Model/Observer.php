@@ -15,17 +15,19 @@
  * @license        http://opensource.org/licenses/mit-license.php MIT License
  */
 namespace Easylife\Breadcrumbs\Model;
-use Magento\Framework\ObjectManager;
+use Magento\Framework\ObjectManagerInterface;
 use Magento\Framework\Registry;
 use Magento\Theme\Block\Html\Breadcrumbs;
 use Magento\Framework\View\Result\PageFactory;
 use Magento\Store\Model\StoreManagerInterface;
-use Magento\Customer\Helper\Data as CustomerHelper;
+use Magento\Customer\Model\Url as CustomerHelper;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Easylife\Breadcrumbs\Model\Config;
 use Magento\Framework\UrlInterface;
 use Easylife\Breadcrumbs\Model\Observer\ObserverInterface;
-class Observer implements ObserverInterface {
+
+class Observer implements ObserverInterface
+{
     /**
      * xml config path to enabled setting
      */
@@ -58,24 +60,38 @@ class Observer implements ObserverInterface {
      * @var \Magento\Store\Model\StoreManagerInterface
      */
     protected $_storeManager;
+
     /**
-     * @var \Magento\Customer\Helper\Data
+     * @var \Magento\Customer\Model\Url
      */
     protected $_customerHelper;
+
     /**
      * @var \Magento\Framework\App\Config\ScopeConfigInterface
      */
     protected $_scopeConfig;
+
     /**
      * @var \Magento\Framework\UrlInterface
      */
     protected $_urlBuilder;
+
+    /**
+     * @var \Magento\Framework\Registry
+     */
     protected $_coreRegistry;
+
+    /**
+     * @var Config
+     */
     protected $_configData;
+
+    /**
+     * @var \Magento\Framework\ObjectManagerInterface
+     */
     protected $_objectManager;
 
     /**
-     * constructor
      * @param PageFactory $pageFactory
      * @param StoreManagerInterface $storeManager
      * @param CustomerHelper $customerHelper
@@ -83,7 +99,7 @@ class Observer implements ObserverInterface {
      * @param UrlInterface $urlBuilder
      * @param Registry $registry
      * @param Config $configData
-     * @param ObjectManager $objectManager
+     * @param ObjectManagerInterface $objectManager
      */
     public function __construct(
         PageFactory $pageFactory,
@@ -93,7 +109,7 @@ class Observer implements ObserverInterface {
         UrlInterface $urlBuilder,
         Registry $registry,
         Config $configData,
-        ObjectManager $objectManager
+        ObjectManagerInterface $objectManager
 
     ) {
         $this->_pageFactory = $pageFactory;
