@@ -19,10 +19,10 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
     <acl>
         <resources>
-            <resource id="Magento_Adminhtml::admin">
-                <resource id="Magento_Adminhtml::stores">
-                    <resource id="Magento_Adminhtml::stores_settings">
-                        <resource id="Magento_Adminhtml::config">
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
                             <resource id="Easylife_Breadcrumbs::config_breadcrumbs" title="Easylife Breadcrumbs Configuration" sortOrder="500" />
                         </resource>
                     </resource>
