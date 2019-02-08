@@ -16,6 +16,6 @@
 * @license        http://opensource.org/licenses/mit-license.php MIT License
 */
 -->
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Easylife\Breadcrumbs\Model\Observer\ObserverInterface" type="Easylife\Breadcrumbs\Model\Observer" />
 </config>
