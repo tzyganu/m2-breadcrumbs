@@ -53,8 +53,8 @@ class Converter implements ConverterInterface {
         $result = $this->_convertDOMDocument($source);
         foreach ($this->_mapperList as $type) {
             /** @var $mapper MapperInterface */
-            $mapper = $this->_mapperFactory->create($type);
-            $result = $mapper->map($result);
+//            $mapper = $this->_mapperFactory->create($type);
+//            $result = $mapper->map($result);
         }
         return $result;
     }

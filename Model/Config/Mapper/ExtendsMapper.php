@@ -15,8 +15,7 @@
  * @license        http://opensource.org/licenses/mit-license.php MIT License
  */
 namespace Easylife\Breadcrumbs\Model\Config\Mapper;
-use \Magento\Backend\Model\Config\Structure\MapperInterface;
-class ExtendsMapper implements MapperInterface{
+class ExtendsMapper {
     /**
      * configuration to map
      * @var array

@@ -15,6 +15,7 @@
  * @license        http://opensource.org/licenses/mit-license.php MIT License
  */
 namespace Easylife\Breadcrumbs\Model;
+use Magento\Framework\Event\ObserverInterface;
 use Magento\Framework\ObjectManagerInterface;
 use Magento\Framework\Registry;
 use Magento\Theme\Block\Html\Breadcrumbs;
@@ -24,7 +25,6 @@ use Magento\Customer\Model\Url as CustomerHelper;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Easylife\Breadcrumbs\Model\Config;
 use Magento\Framework\UrlInterface;
-use Easylife\Breadcrumbs\Model\Observer\ObserverInterface;
 
 class Observer implements ObserverInterface
 {
@@ -178,11 +178,13 @@ class Observer implements ObserverInterface
      * @param \Magento\Framework\Event\Observer $observer
      * @return $this
      */
-    public function addBreadcrumbs(\Magento\Framework\Event\Observer $observer) {
+    public function execute(\Magento\Framework\Event\Observer $observer) {
+
         $block = $this->_getBreadcrumbBlock();
         if (!$block) {
             return $this;
         }
+
         $eventName = $observer->getEvent()->getName();
         $page = $this->_getPageName($eventName);
         if ($this->_canAddBreadcrumb($page)) {
