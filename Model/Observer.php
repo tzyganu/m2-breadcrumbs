@@ -47,7 +47,7 @@ class Observer implements ObserverInterface
     /**
      * event prefix
      */
-    const EVENT_PREFIX              = 'controller_action_layout_render_before_';
+    const EVENT_PREFIX              = 'layout_render_before_';
     /**
      * @var \Magento\Framework\View\Result\PageFactory
      */
