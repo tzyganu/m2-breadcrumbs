@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Easylife_Breadcrumbs extension
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the MIT License
+* that is bundled with this package in the file LICENSE_EASYLIFE_BREADCRUMBS.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/mit-license.php
+*
+* @category       Easylife
+* @package        Easylife_Breadcrumbs
+* @copyright      Copyright (c) 2014
+* @license        http://opensource.org/licenses/mit-license.php MIT License
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Adminhtml::admin">
+                <resource id="Magento_Adminhtml::stores">
+                    <resource id="Magento_Adminhtml::stores_settings">
+                        <resource id="Magento_Adminhtml::config">
+                            <resource id="Easylife_Breadcrumbs::config_breadcrumbs" title="Easylife Breadcrumbs Configuration" sortOrder="500" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
