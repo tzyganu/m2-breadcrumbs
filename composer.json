@@ -1,0 +1,22 @@
+{
+    "name": "tzyganu/m2-breadcrumbs",
+    "description": "",
+    "require": {
+        "php": "~7.0.0|~7.1.0|~7.2.0"
+    },
+    "suggest": {
+
+    },
+    "type": "magento2-module",
+    "license": [
+
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Easylife\\Breadcrumbs\\": ""
+        }
+    }
+}

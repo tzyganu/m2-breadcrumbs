@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+* Easylife_Breadcrumbs extension
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the MIT License
+* that is bundled with this package in the file LICENSE_EASYLIFE_BREADCRUMBS.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/mit-license.php
+*
+* @category       Easylife
+* @package        Easylife_Breadcrumbs
+* @copyright      Copyright (c) 2014
+* @license        http://opensource.org/licenses/mit-license.php MIT License
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="layout_render_before_customer_account_login">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_customer_account_forgotpassword">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_customer_account_create">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_customer_account_index">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_customer_account_edit">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_customer_address_index">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_customer_address_form">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_downloadable_customer_products">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_sales_recurringPayment_index">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_sales_recurringPayment_view">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_sales_recurringPayment_orders">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_sales_recurringPayment_updatePayment">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_sales_recurringPayment_updateState">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_newsletter_manage_index">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_paypal_billing_agreement_index">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_paypal_billing_agreement_view">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_review_customer_index">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_review_customer_view">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_wishlist_index_index">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_sales_order_history">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_sales_order_view">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_sales_order_invoice">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_sales_order_creditmemo">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_sales_order_shipment">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_catalogsearch_term_popular">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_contact_index_index">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_checkout_cart_index">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_sendfriend_product_send">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_checkout_onepage_index">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_multishipping_checkout_addresses">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_multishipping_checkout_address_newShipping">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_multishipping_checkout_shipping">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_multishipping_checkout_address_editShipping">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_multishipping_checkout_billing">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_multishipping_checkout_address_selectBilling">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_multishipping_checkout_overview">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+    <event name="layout_render_before_rss_index_index">
+        <observer name="easylife_breadcrumbs" instance="Easylife\Breadcrumbs\Model\Observer"/>
+    </event>
+</config>
