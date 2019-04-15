@@ -1,4 +1,4 @@
-Mangento 2 Breadcrumbs
+Magento 2 Breadcrumbs
 =============
 
 Magento 2 (as Magento 1) has a lot of pages where breadcrumbs are missing.  
@@ -6,10 +6,13 @@ some of them might not need them, but for others I think they might be needed.
 Specially for the customer account pages.  
 Having breadcrumbs will improve the customer experience and will make the navigation easier.
 
+This is based on the no-longer maintained https://github.com/tzyganu/m2-breadcrumbs
+
 Installation
 ---------
-Copy this extension inside the `app/code` folder (or `app/modules` if [the request #357](https://github.com/magento/magento2/issues/357) get's implemented).  
-By default the breadcrumbs will be added to all supported pages.  
+
+    composer require imi/m2-breadcrumbs
+
 You can find a list of supported pages in `etc/frontend/breadcrumbs.xml`.  
 If you don't want breadcrumbs for a specific page then you can manage the pages from `Stores->Configuration->Easylife Breadcrumbs`.  
 
