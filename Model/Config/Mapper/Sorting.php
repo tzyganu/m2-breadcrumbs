@@ -15,7 +15,7 @@
  * @license        http://opensource.org/licenses/mit-license.php MIT License
  */
 namespace Easylife\Breadcrumbs\Model\Config\Mapper;
-use \Magento\Backend\Model\Config\Structure\MapperInterface;
+use \Magento\Config\Model\Config\Structure\MapperInterface;
 class Sorting implements MapperInterface{
     /**
      * @param array $data
