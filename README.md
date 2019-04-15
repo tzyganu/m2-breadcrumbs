@@ -1,3 +1,8 @@
+Notice
+========
+This extension is discontinued. There will be no support, no upgrades.  
+**For the maintained version you can use https://github.com/iMi-digital/m2-breadcrumbs**
+
 Mangento 2 Breadcrumbs
 =============
 
